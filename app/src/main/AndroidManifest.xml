@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.price_tracker">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PriceTracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Taskthree"></activity>
+        <activity android:name=".Tasktwo" />
+        <activity android:name=".Taskone" />
+        <activity android:name=".Splashscreen"
+            android:theme="@style/Splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme"></activity>
+        <service android:name=".Set_Notification" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"></action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

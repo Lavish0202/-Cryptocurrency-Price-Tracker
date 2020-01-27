@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tasktwo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIDS"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="#000000"
+
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ASK"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="#000000"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bidview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_item"
+            android:layout_weight="1"
+            android:background="#1E1E57"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_item"
+            android:id="@+id/askview"
+            android:layout_weight="1"
+            android:background="#610C0B"
+            />
+
+    </LinearLayout>
+</LinearLayout>

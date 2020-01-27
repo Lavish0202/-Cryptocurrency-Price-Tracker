@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Taskthree">
+
+    <EditText
+        android:id="@+id/etone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|number"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add item Price"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/savelist"
+        android:background="#2E2E8A"
+        />
+
+</LinearLayout>
