@@ -71,7 +71,7 @@ public class Taskthree extends Activity implements View.OnClickListener{
                             .setConstraints(Constraint.ON_ANY_NETWORK)
                             .setRecurring(true)
                             .setReplaceCurrent(true)
-                            .setTrigger(Trigger.executionWindow(20, 30))
+                            .setTrigger(Trigger.executionWindow(3600, 3620))
                             .build()
             );
         }
