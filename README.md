@@ -1,4 +1,4 @@
-# ILoveZappos
+#Price Tracker(Android)
 The app is functional for 3 tasks. 
 First is Fetching the value of cryptocurrency from an given API and displaying the value by using mpAndroidChart which will show transaction history of the price over time.
 Second using Recycler view displaying two tables side by side for the order book. Each table value is fetched by the given API.
